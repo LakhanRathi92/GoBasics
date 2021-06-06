@@ -3,5 +3,5 @@
 ## Tasks
 
 - Golang basics  
-- A simple Microservice
+- Microservice with go, following the Building microservices with Go by Nic Jackson
 
