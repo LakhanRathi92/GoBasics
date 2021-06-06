@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/LakhanRathi92/GoBasics/handlers"
 )
@@ -19,5 +20,13 @@ func main() {
 	sm.Handle("/hello", helloHandler)
 	sm.Handle("/bye", byeHandler)
 
-	http.ListenAndServe("127.0.0.1:9090", sm)
+	s := &http.Server{
+		Addr:         "127.0.0.1:9090",
+		Handler:      sm,
+		IdleTimeout:  120 * time.Second,
+		ReadTimeout:  1 * time.Second,
+		WriteTimeout: 1 * time.Second,
+	}
+
+	s.ListenAndServe()
 }
