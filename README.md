@@ -1,8 +1,8 @@
 # Golang Learning
 
-## Tasks
+## Go learning resources
 
-- Golang basics  
+- Golang basics https://tour.golang.org/list
 
 - Microservice with go, following the Building microservices with Go by Nic Jackson : https://www.youtube.com/channel/UC2V1SxXFUa5YxVJvTsrCgyg
 
